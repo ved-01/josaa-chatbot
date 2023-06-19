@@ -20,7 +20,7 @@ def chat():
     response = query_engine.query(user_input)
 
     # Convert the response to a string
-    bot_response = ', '.join(response)
+    bot_response = str(response)
 
     return bot_response
 
