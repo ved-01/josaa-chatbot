@@ -3,7 +3,8 @@ from llama_index import VectorStoreIndex, SimpleDirectoryReader
 
 app = Flask(__name__)
 
-documents = SimpleDirectoryReader(r'D:\NLP\practice\data').load_data()
+documents = SimpleDirectoryReader('D:/NLP/josaa-chatbot/data').load_data()
+
 index = VectorStoreIndex.from_documents(documents)
 
 @app.route('/')
